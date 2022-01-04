@@ -1,4 +1,4 @@
-puts "Привет, я дневник\nЯ сохраню всё, что ты напишешь до строчки \"end\" в файл."
+puts "Привет, я дневник\nЯ сохраню всё, что ты напишешь до строчки \"/\" в файл."
 
 current_path = File.dirname(__FILE__) + "/"
 
@@ -6,7 +6,7 @@ line      = nil
 all_lines = []
 
 
-while line != "end" do
+while line != "/" do
   line = STDIN.gets.chomp
   all_lines << line
 end
